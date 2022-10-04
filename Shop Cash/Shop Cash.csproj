@@ -83,5 +83,14 @@
   <ItemGroup>
     <None Include="Resources\Team-Canada-Logo-2018.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\201159__kiddpark__cash-register.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\390531__freedomfightervictor__calculating.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345054__azumarill__epson-receipt-printer5.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
