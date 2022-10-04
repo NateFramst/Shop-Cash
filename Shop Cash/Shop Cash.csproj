@@ -92,5 +92,11 @@
   <ItemGroup>
     <None Include="Resources\345054__azumarill__epson-receipt-printer5.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\316962__azumarill__epson-receipt-printer-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345955__knufds__typewriter-bell-carriage-reset.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

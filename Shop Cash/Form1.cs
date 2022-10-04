@@ -32,7 +32,7 @@ namespace Shop_Cash
         double payment;
         double change;
         double ordernumber = 0;
-        double sizee = 50;
+     
         
          
         public trueNorthDG()
@@ -146,6 +146,8 @@ namespace Shop_Cash
             recepitButton.Enabled = false;
             recieptOutput.Text = $" ";
             calculateButton.Enabled = true;
+            SoundPlayer Reset = new SoundPlayer(Properties.Resources.reset);
+            Reset.Play();
 
         }
 
@@ -200,62 +202,61 @@ namespace Shop_Cash
 
         private void recepitButton_Click(object sender, EventArgs e)
         {
-            /*
-            int n = 50;
-            size = recieptOutput.Size;
-            for (int i = 0; i < 10; i++)
-            {
-                n = n++;
-                recieptOutput.Size = new Size(310, (n + 50));
-            }
-            */
+
             recieptOutput.BackColor = Color.White;
-            SoundPlayer print = new SoundPlayer(Properties.Resources.printnoise);
-            print.Play();
+            int n = 10;
+
+            recieptOutput.Size = new Size(0, 0);
+            
+            
             ordernumber = ordernumber + 1;
             recepitButton.Enabled = false;
             recieptOutput.Text = $"True North Disc Golf";
-            Thread.Sleep(750);
+            
             Refresh();
             recieptOutput.Text += $" \n\n New Order #{ordernumber}";
-            Thread.Sleep(750);
+            
             Refresh();
             if (rainmakeramout > 0)
             {
                 recieptOutput.Text += $" \n\n Rainmakers x{rainmakeramout}        @ ${rainmakerrate}";
-                Thread.Sleep(750);
+                
                 Refresh();
             }
             if (DD3amount > 0)
             {
                 recieptOutput.Text += $" \n\n DD3s x{DD3amount}              @ ${DD3rate}";
-                Thread.Sleep(750);
+               
                 Refresh();
             }
             if (MD3amount > 0)
             {
                 recieptOutput.Text += $" \n\n MD3s x{MD3amount}              @ ${MD3rate}";
-                Thread.Sleep(750);
+                
                 Refresh();
             }
             recieptOutput.Text += $" \n\n Subtotal               {subtotal.ToString ("C")}";
-            Thread.Sleep(750);
-            Refresh();
+           
             recieptOutput.Text += $" \n\n Tax                    {tax.ToString("C")}";
-            Thread.Sleep(750);
-            Refresh();
+            
             recieptOutput.Text += $" \n\n Total                  {total.ToString("C")}";
-            Thread.Sleep(750);
-            Refresh();
+            
             recieptOutput.Text += $" \n\n Tendered               {payment.ToString("C")}";
-            Thread.Sleep(750);
-            Refresh();
+            
             recieptOutput.Text += $" \n\n Change                 {change.ToString("C")}";
-            Thread.Sleep(750);
-            Refresh();
+            
             recieptOutput.Text += $" \n\n Have A Nice Day! See You Again Soon";
-            Thread.Sleep(750);
+            
             Refresh();
+            SoundPlayer print = new SoundPlayer(Properties.Resources.printnoise);
+            print.Play();
+            for (int i = 0; i < 75; i++)
+            {
+                n = n + 5;
+                recieptOutput.Size = new Size(310, (n + 5));
+                Thread.Sleep(5);
+                Refresh();
+            }
         }
     }
 }
