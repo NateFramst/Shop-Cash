@@ -48,10 +48,10 @@
             this.md3LabelAmount = new System.Windows.Forms.TextBox();
             this.paymentButton = new System.Windows.Forms.Button();
             this.paymentLabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LOGOBOX = new System.Windows.Forms.PictureBox();
+            this.LOGOBOX2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.LOGOBOX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOGOBOX2)).BeginInit();
             this.SuspendLayout();
             // 
             // titleColour
@@ -110,7 +110,7 @@
             // calculateButton
             // 
             this.calculateButton.Location = new System.Drawing.Point(1, 502);
-            this.calculateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(2);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(124, 37);
             this.calculateButton.TabIndex = 10;
@@ -155,8 +155,8 @@
             // paymentInput
             // 
             this.paymentInput.Enabled = false;
-            this.paymentInput.Location = new System.Drawing.Point(254, 503);
-            this.paymentInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.paymentInput.Location = new System.Drawing.Point(143, 503);
+            this.paymentInput.Margin = new System.Windows.Forms.Padding(2);
             this.paymentInput.Name = "paymentInput";
             this.paymentInput.Size = new System.Drawing.Size(93, 36);
             this.paymentInput.TabIndex = 14;
@@ -164,7 +164,7 @@
             // changeLabel
             // 
             this.changeLabel.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changeLabel.Location = new System.Drawing.Point(353, 465);
+            this.changeLabel.Location = new System.Drawing.Point(382, 465);
             this.changeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.changeLabel.Name = "changeLabel";
             this.changeLabel.Size = new System.Drawing.Size(91, 25);
@@ -179,7 +179,7 @@
             this.changeOutput.CausesValidation = false;
             this.changeOutput.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeOutput.ForeColor = System.Drawing.Color.Black;
-            this.changeOutput.Location = new System.Drawing.Point(351, 503);
+            this.changeOutput.Location = new System.Drawing.Point(380, 503);
             this.changeOutput.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.changeOutput.Name = "changeOutput";
             this.changeOutput.Size = new System.Drawing.Size(93, 36);
@@ -190,7 +190,7 @@
             // 
             this.recepitButton.Enabled = false;
             this.recepitButton.Location = new System.Drawing.Point(518, 501);
-            this.recepitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.recepitButton.Margin = new System.Windows.Forms.Padding(2);
             this.recepitButton.Name = "recepitButton";
             this.recepitButton.Size = new System.Drawing.Size(107, 37);
             this.recepitButton.TabIndex = 18;
@@ -212,7 +212,7 @@
             // 
             this.newOrderButton.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newOrderButton.Location = new System.Drawing.Point(630, 500);
-            this.newOrderButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.newOrderButton.Margin = new System.Windows.Forms.Padding(2);
             this.newOrderButton.Name = "newOrderButton";
             this.newOrderButton.Size = new System.Drawing.Size(142, 38);
             this.newOrderButton.TabIndex = 20;
@@ -223,7 +223,7 @@
             // rainmakerAMount
             // 
             this.rainmakerAMount.Location = new System.Drawing.Point(11, 173);
-            this.rainmakerAMount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rainmakerAMount.Margin = new System.Windows.Forms.Padding(2);
             this.rainmakerAMount.Name = "rainmakerAMount";
             this.rainmakerAMount.Size = new System.Drawing.Size(119, 36);
             this.rainmakerAMount.TabIndex = 21;
@@ -231,7 +231,7 @@
             // dd3LabelAmount
             // 
             this.dd3LabelAmount.Location = new System.Drawing.Point(11, 307);
-            this.dd3LabelAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dd3LabelAmount.Margin = new System.Windows.Forms.Padding(2);
             this.dd3LabelAmount.Name = "dd3LabelAmount";
             this.dd3LabelAmount.Size = new System.Drawing.Size(119, 36);
             this.dd3LabelAmount.TabIndex = 22;
@@ -239,7 +239,7 @@
             // md3LabelAmount
             // 
             this.md3LabelAmount.Location = new System.Drawing.Point(11, 412);
-            this.md3LabelAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.md3LabelAmount.Margin = new System.Windows.Forms.Padding(2);
             this.md3LabelAmount.Name = "md3LabelAmount";
             this.md3LabelAmount.Size = new System.Drawing.Size(119, 36);
             this.md3LabelAmount.TabIndex = 23;
@@ -247,8 +247,8 @@
             // paymentButton
             // 
             this.paymentButton.Enabled = false;
-            this.paymentButton.Location = new System.Drawing.Point(129, 502);
-            this.paymentButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.paymentButton.Location = new System.Drawing.Point(249, 503);
+            this.paymentButton.Margin = new System.Windows.Forms.Padding(2);
             this.paymentButton.Name = "paymentButton";
             this.paymentButton.Size = new System.Drawing.Size(121, 37);
             this.paymentButton.TabIndex = 24;
@@ -259,7 +259,7 @@
             // paymentLabel
             // 
             this.paymentLabel.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paymentLabel.Location = new System.Drawing.Point(256, 465);
+            this.paymentLabel.Location = new System.Drawing.Point(145, 465);
             this.paymentLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.paymentLabel.Name = "paymentLabel";
             this.paymentLabel.Size = new System.Drawing.Size(91, 25);
@@ -267,31 +267,31 @@
             this.paymentLabel.Text = "Payment";
             this.paymentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
+            // LOGOBOX
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Red;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = global::Shop_Cash.Properties.Resources.Team_Canada_Logo_2018;
-            this.pictureBox2.Location = new System.Drawing.Point(701, -4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(84, 89);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.LOGOBOX.BackColor = System.Drawing.Color.Red;
+            this.LOGOBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.LOGOBOX.Image = global::Shop_Cash.Properties.Resources.Team_Canada_Logo_2018;
+            this.LOGOBOX.Location = new System.Drawing.Point(701, -4);
+            this.LOGOBOX.Margin = new System.Windows.Forms.Padding(2);
+            this.LOGOBOX.Name = "LOGOBOX";
+            this.LOGOBOX.Size = new System.Drawing.Size(84, 89);
+            this.LOGOBOX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LOGOBOX.TabIndex = 2;
+            this.LOGOBOX.TabStop = false;
             // 
-            // pictureBox1
+            // LOGOBOX2
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Red;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::Shop_Cash.Properties.Resources.Team_Canada_Logo_2018;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.LOGOBOX2.BackColor = System.Drawing.Color.Red;
+            this.LOGOBOX2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.LOGOBOX2.Image = global::Shop_Cash.Properties.Resources.Team_Canada_Logo_2018;
+            this.LOGOBOX2.Location = new System.Drawing.Point(1, -4);
+            this.LOGOBOX2.Margin = new System.Windows.Forms.Padding(2);
+            this.LOGOBOX2.Name = "LOGOBOX2";
+            this.LOGOBOX2.Size = new System.Drawing.Size(93, 89);
+            this.LOGOBOX2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LOGOBOX2.TabIndex = 1;
+            this.LOGOBOX2.TabStop = false;
             // 
             // trueNorthDG
             // 
@@ -318,15 +318,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dd3Label);
             this.Controls.Add(this.rainmakerLabel);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LOGOBOX);
+            this.Controls.Add(this.LOGOBOX2);
             this.Controls.Add(this.titleColour);
             this.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "trueNorthDG";
             this.Text = "True North Disc Golf";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOGOBOX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOGOBOX2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,8 +335,8 @@
         #endregion
 
         private System.Windows.Forms.Label titleColour;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox LOGOBOX2;
+        private System.Windows.Forms.PictureBox LOGOBOX;
         private System.Windows.Forms.Label rainmakerLabel;
         private System.Windows.Forms.Label dd3Label;
         private System.Windows.Forms.Label label1;
